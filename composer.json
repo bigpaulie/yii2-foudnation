@@ -1,0 +1,25 @@
+{
+    "name": "bigpaulie/yii2-foundation",
+    "description": "Foundation asset for Yii 2.",
+    "type": "yii2-extension",
+    "keywords": [
+        "yii2" , "foundation" , "asset" , "extension"
+    ],
+    "homepage": "http://foundation.zurb.com/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Paul Purcel",
+            "email": "bigpaulie25ro@yahoo.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*",
+        "bower-asset/foundation": "5.4.*",
+        "bower-asset/modernizr": "*",
+        "bower-asset/jquery": "*"
+    },
+    "autoload": {
+        "psr-4": "bigpaulie\\foundation\\"
+    }
+}
