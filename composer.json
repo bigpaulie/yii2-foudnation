@@ -1,0 +1,22 @@
+{
+    "name": "bigpaulie/yii2-foundation",
+    "description": "Foundation Framework Yii2 Extension.",
+    "license": "MIT",
+    "keywords": ["Yii2","Foundation","Extension"],
+    "authors": [
+        {
+            "name": "Paul Purcel",
+            "email": "bigpaulie25ro@yahoo.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "2.*",
+        "bower-asset/foundation": "5.4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "bigpaulie\\foundation\\": ""
+        }
+    }
+}
