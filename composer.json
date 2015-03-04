@@ -2,9 +2,7 @@
     "name": "bigpaulie/yii2-foundation",
     "description": "Foundation asset for Yii 2.",
     "type": "yii2-extension",
-    "keywords": [
-        "yii2" , "foundation" , "asset" , "extension"
-    ],
+    "keywords": ["yii2" , "foundation" , "asset" , "extension"],
     "homepage": "http://foundation.zurb.com/",
     "license": "MIT",
     "authors": [
