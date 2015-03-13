@@ -7,15 +7,16 @@ use bigpaulie\foundation\Widget;
 class TopbarWidget extends Widget{
     
     public $title;
-    public $rightItems = [];
-    public $leftItems = [];
+    public $titleLink;
+    public $items;
+    public $clientOptions;
     
     public function run(){
-        $this->render('topbar' , array(
+        return $this->render('topbar' , [
             'title' => $this->title,
-            'rightItems' => $this->rightItems,
-            'leftItems' => $this->leftItems,
-        ));
+            'title_link' => $this->titleLink,
+            'items' => $this->items,
+        ]);
     }
     
 }
