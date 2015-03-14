@@ -2,15 +2,15 @@
 
 namespace bigpaulie\foundation;
 
-use \yii\web\AssetBundle;
-use \yii\web\View;
+use yii2\web\AssetBundle;
+use yii2\web\View;
 
-class JqueryAsset extends AssetBundle {
-
-    public $sourcePath = '@bower/jquery';
+class JqueryAsset extends AssetBundle{
+    
     public $js = [
-        'jquery.min.js'
+        '//code.jquery.com/jquery-latest.min.js',
     ];
+    
     public $jsOptions = ['position' => View::POS_END];
-
+    
 }

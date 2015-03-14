@@ -11,13 +11,11 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "yiisoft/yii2": "2.*",
-        "bower-asset/foundation": "5.4.*"
+        "yiisoft/yii2": "2.*"
     },
     "autoload": {
         "psr-4": {
-            "bigpaulie\\foundation\\": "",
-            "bigpaulie\\foundation\\widgets\\": "widgets"
+            "bigpaulie\\foundation\\": ""
         }
     }
 }

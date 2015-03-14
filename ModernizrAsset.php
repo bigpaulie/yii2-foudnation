@@ -2,15 +2,15 @@
 
 namespace bigpaulie\foundation;
 
-use \yii\web\AssetBundle;
-use \yii\web\View;
+use yii2\web\AssetBundle;
+use yii2\web\View;
 
 class ModernizrAsset extends AssetBundle {
-
-    public $sourcePath = '@bower/modernizr';
+    
     public $js = [
-        'modernizr.js'
+        'js/vendor/modernizr.js',
     ];
+    
     public $jsOptions = ['position' => View::POS_HEAD];
-
+    
 }
