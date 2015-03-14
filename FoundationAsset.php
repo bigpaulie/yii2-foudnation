@@ -1,5 +1,5 @@
 <?php
-
+ 
 namespace bigpaulie\foundation;
 
 use yii\web\AssetBundle;
