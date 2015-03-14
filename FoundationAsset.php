@@ -26,7 +26,7 @@ class FoundationAsset extends AssetBundle{
     
     public function init(){
         parent::init();
-        $view = View::className();
+        $view = View::className(); 
         $view->registerJs("$(document).foundation();" , View::POS_END);
     }
     
