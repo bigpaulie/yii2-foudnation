@@ -2,8 +2,8 @@
 
 namespace bigpaulie\foundation;
 
-use yii2\web\AssetBundle;
-use yii2\web\View;
+use yii\web\AssetBundle;
+use yii\web\View;
 
 class FoundationAsset extends AssetBundle{
     
