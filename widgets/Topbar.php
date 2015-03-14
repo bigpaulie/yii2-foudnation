@@ -11,6 +11,7 @@ class Topbar extends Widget {
     public $titleLink;
 
     public function run() {
+        $this->registerOptions();
         return $this->render('topbar', [
                     'items' => $this->items,
                     'title' => $this->title,
