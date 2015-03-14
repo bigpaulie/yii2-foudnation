@@ -28,7 +28,7 @@
                     <?php elseif (is_array($r)): ?>
                         <?php foreach ($r as $ra): ?>
                             <li class="has-dropdown">
-                                <?php die(print_r($ra));?>
+                                <?php die(print_r($r));?>
                                 <a href="#"><?php echo $ra['lablesub']; ?></a>
                                 <ul class="dropdown">
                                     <?php foreach ($ra['items'] as $ri): ?>
