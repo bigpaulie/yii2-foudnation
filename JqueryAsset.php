@@ -2,7 +2,7 @@
 
 namespace bigpaulie\foundation;
 
-use yii2\web\AssetBundle;
+use yii\web\AssetBundle;
 use yii2\web\View;
 
 class JqueryAsset extends AssetBundle{
