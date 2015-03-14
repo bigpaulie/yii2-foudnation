@@ -21,7 +21,7 @@ class FoundationAsset extends AssetBundle{
     public $jsOptions = ['position' => View::POS_END];
     
     public $depends = [
-        'bigpaulie\foundation\ModernzirAsset',
+        'bigpaulie\foundation\ModernizrAsset',
         'bigpaulie\foundation\JqueryAsset',
     ];
     
