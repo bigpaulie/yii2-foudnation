@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "bigpaulie\\foundation\\": "/",
+            "bigpaulie\\foundation\\": "",
             "bigpaulie\\foundation\\widgets\\": "src"
         }
     }
