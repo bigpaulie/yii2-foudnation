@@ -17,7 +17,34 @@
         <?php if (isset($items['right'])): ?>
             <ul class="right">
                 <?php foreach ($items['right'] as $r): ?>
-                    <pre><?php (isset($r['items']))? print_r($r) : ''; ?></pre>
+                    <?php if (isset($r['class']) && $r['class'] == 'divider'): ?>
+                        <li class="divider"></li>
+                    <?php elseif (isset($r['class']) && $r['class'] == 'active'): ?>
+                        <li class="active">
+                            <a href="<?php echo $r['link']; ?>">
+                                <?php echo $r['lable']; ?>
+                            </a>
+                        </li>
+                    <?php elseif (isset($r['items'])): ?>
+                        <li class="has-dropdown">
+                            <a href="#"><?php echo $r['lable']; ?></a>
+                            <ul class="dropdown">
+                                <?php foreach ($r['items'] as $ri): ?>
+                                    <li>
+                                        <a href="<?php echo $ri['link']; ?>">
+                                            <?php echo $ri['lable']; ?>
+                                        </a>
+                                    </li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </li>
+                    <?php else: ?>
+                        <li>
+                            <a href="<?php echo $r['link']; ?>">
+                                <?php echo $r['lable']; ?>
+                            </a>
+                        </li>
+                    <?php endif; ?>
                 <?php endforeach; ?>
             </ul>
         <?php endif; ?>
