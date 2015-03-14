@@ -19,7 +19,7 @@
                 <?php foreach ($items['right'] as $r): ?>
                     <?php if ($r['class'] == 'active'): ?>
                         <li class="active">
-                            <a href="<?php echo $r['link']; ?>"><?php echo $r['label']; ?></a>
+                            <a href="<?php echo $r['link']; ?>"><?php echo $r['lable']; ?></a>
                         </li>
                     <?php elseif (is_array($r)): ?>
                         <li class="has-dropdown">
@@ -29,13 +29,13 @@
                                     <?php if ($ri['class'] == 'active'): ?>
                                         <li class="active">
                                             <a href="<?php echo $ri['link']; ?>">
-                                                <?php echo $ri['label']; ?>
+                                                <?php echo $ri['lable']; ?>
                                             </a>
                                         </li>
                                     <?php else: ?>
                                         <li>
                                             <a href="<?php echo $ri['link']; ?>">
-                                                <?php echo $ri['label']; ?>
+                                                <?php echo $ri['lable']; ?>
                                             </a>
                                         </li>
                                     <?php endif; ?>
@@ -45,7 +45,7 @@
                     <?php else: ?>
                         <li>
                             <a href="<?php echo $r['link']; ?>">
-                                <?php echo $r['label']; ?>
+                                <?php echo $r['lable']; ?>
                             </a>
                         </li>
                     <?php endif; ?>
@@ -58,7 +58,7 @@
                 <?php foreach ($items['left'] as $l): ?>
                     <?php if ($l['class'] == 'active'): ?>
                         <li class="active">
-                            <a href="<?php echo $l['link']; ?>"><?php echo $l['label']; ?></a>
+                            <a href="<?php echo $l['link']; ?>"><?php echo $l['lable']; ?></a>
                         </li>
                     <?php elseif (is_array($l)): ?>
                         <li class="has-dropdown">
@@ -68,13 +68,13 @@
                                     <?php if ($li['class'] == 'active'): ?>
                                         <li class="active">
                                             <a href="<?php echo $li['link']; ?>">
-                                                <?php echo $li['label']; ?>
+                                                <?php echo $li['lable']; ?>
                                             </a>
                                         </li>
                                     <?php else: ?>
                                         <li>
                                             <a href="<?php echo $li['link']; ?>">
-                                                <?php echo $li['label']; ?>
+                                                <?php echo $li['lable']; ?>
                                             </a>
                                         </li>
                                     <?php endif; ?>
@@ -84,7 +84,7 @@
                     <?php else: ?>
                         <li>
                             <a href="<?php echo $l['link']; ?>">
-                                <?php echo $l['label']; ?>
+                                <?php echo $l['lable']; ?>
                             </a>
                         </li>
                     <?php endif; ?>
