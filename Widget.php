@@ -5,7 +5,7 @@ namespace bigpaulie\foundation;
 use yii\helpers\Json;
 use yii\web\View;
 
-class Widget extends yii\base\Widget {
+class Widget extends \yii\base\Widget {
 
     public $clientOptions = [];
 
