@@ -17,7 +17,7 @@
         <?php if (isset($items['right'])): ?>
             <ul class="right">
                 <?php foreach ($items['right'] as $r): ?>
-                    <pre><?php (is_array($r))? print_r($r) : ''; ?></pre>
+                    <pre><?php (isset($r['items']))? print_r($r) : ''; ?></pre>
                 <?php endforeach; ?>
             </ul>
         <?php endif; ?>
