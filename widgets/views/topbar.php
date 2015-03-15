@@ -14,6 +14,42 @@
     </ul>
 
     <section class="top-bar-section">
+        
+        <?php if (isset($items['left'])): ?>
+            <ul class="right">
+                <?php foreach ($items['left'] as $l): ?>
+                    <?php if (isset($l['class']) && $l['class'] == 'divider'): ?>
+                        <li class="divider"></li>
+                    <?php elseif (isset($l['class']) && $l['class'] == 'active'): ?>
+                        <li class="active">
+                            <a href="<?php echo $l['link']; ?>">
+                                <?php echo $l['lable']; ?>
+                            </a>
+                        </li>
+                    <?php elseif (isset($l['items'])): ?>
+                        <li class="has-dropdown">
+                            <a href="#"><?php echo $l['lable']; ?></a>
+                            <ul class="dropdown">
+                                <?php foreach ($l['items'] as $li): ?>
+                                    <li>
+                                        <a href="<?php echo $li['link']; ?>">
+                                            <?php echo $li['lable']; ?>
+                                        </a>
+                                    </li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </li>
+                    <?php else: ?>
+                        <li>
+                            <a href="<?php echo $l['link']; ?>">
+                                <?php echo $l['lable']; ?>
+                            </a>
+                        </li>
+                    <?php endif; ?>
+                <?php endforeach; ?>
+            </ul>
+        <?php endif; ?>
+        
         <?php if (isset($items['right'])): ?>
             <ul class="right">
                 <?php foreach ($items['right'] as $r): ?>
@@ -48,6 +84,7 @@
                 <?php endforeach; ?>
             </ul>
         <?php endif; ?>
+        
     </section>
 
 </nav>
