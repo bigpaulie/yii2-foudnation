@@ -16,7 +16,7 @@
     <section class="top-bar-section">
         
         <?php if (isset($items['left'])): ?>
-            <ul class="right">
+            <ul class="left">
                 <?php foreach ($items['left'] as $l): ?>
                     <?php if (isset($l['class']) && $l['class'] == 'divider'): ?>
                         <li class="divider"></li>
